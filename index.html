@@ -245,7 +245,14 @@ View 4
 <script src="https://cdn.firebase.com/libs/geofire/4.1.2/geofire.min.js"></script>
 
 <script>
-  // Initialize Firebase
+ document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    // Now safe to use the PhoneGap API
+ alert('ready');
+}
+ 
+ // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAgU_QQb-dKUM_iPnHSkA_VycnGIMsnKas",
     authDomain: "single-duck.firebaseapp.com",
