@@ -1,6 +1,11 @@
+document.addEventListener("deviceready", onDeviceReady, false);
+
 $(document).ready(function () {
 
-document.addEventListener("deviceready", onDeviceReady, false);
+  alert('yo');
+  
+  
+
 
   // Initialize your app
 var myApp = new Framework7({init: false});
