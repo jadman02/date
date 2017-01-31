@@ -8,6 +8,6 @@
 	<author email="info@dateorduck.com" href="http://dateorduck.com">
 	   Date or Duck Team
 	</author>
-
+<access origin="*" subdomains="true" />
 	<preference name="phonegap-version" value="cli-6.3.0" />
 </widget>
