@@ -36,16 +36,12 @@ myApp.init();
     
     $( document ).ready(function() {
 
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.database().ref('/users').once('value').then(function(snapshot) {
   
-
-  
-  if (user) {
-      
-       alert(user);
-      alert('yes user');// User is signed in.
-  }
+                        alert(snapshot.val());
+                        
 });
+        
 });        
     
     
