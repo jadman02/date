@@ -30,3 +30,20 @@ function onDeviceReady() {
 alert('device ready');  
 }
 
+function facebookLogin(){
+
+  facebookConnectPlugin.login(["email"], loginSuccess(), loginFailure());
+  
+}
+
+function loginSuccess(){
+
+  alert('success');
+  
+}
+
+function loginFailure(){
+
+  alert('failure');
+  
+}
