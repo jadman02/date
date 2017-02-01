@@ -42,8 +42,8 @@ firebase.auth().onAuthStateChanged(function(user) {
   
   if (user) {
       
-       console.log(user);
-       console.log('yes user');// User is signed in.
+       alert(user);
+      alert('yes user');// User is signed in.
   }
 });
 });        
