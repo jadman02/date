@@ -34,6 +34,21 @@ var view1 = myApp.addView('#view-1');
     var view2 = myApp.addView('#view-2');
 myApp.init();
     
+    $( document ).ready(function() {
+
+firebase.auth().onAuthStateChanged(function(user) {
+  
+
+  
+  if (user) {
+      
+       console.log(user);
+       console.log('yes user');// User is signed in.
+  }
+});
+});        
+    
+    
 }
 
 function loginFacebook(){
