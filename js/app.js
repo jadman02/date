@@ -31,7 +31,7 @@ alert('device ready');
 }
 
 function facebookLogin(){
-
+alert('facebook');
   facebookConnectPlugin.login(["email"], loginSuccess(), loginFailure());
   
 }
