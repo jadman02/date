@@ -1,5 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, true);
 
+?/*
 $(document).ready(function () {
 
   alert('yo');
@@ -20,7 +21,7 @@ var view1 = myApp.addView('#view-1');
   myApp.init();
   
 });
-
+*/
 
 function onDeviceReady() {
 
