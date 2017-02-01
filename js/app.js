@@ -30,22 +30,22 @@ function onDeviceReady() {
 alert('device ready');  
 }
 
-facebookConnectPlugin.browserInit(784956164912201);
+
+
+var fbLoginSuccess = function (userData) 
+{
+    alert("UserInfo: " + JSON.stringify(userData));
+}
+ 
+
+
+
+
 
 function facebookLogin(){
-alert('facebook');
-  facebookConnectPlugin.login(["email"], loginSuccess(), loginFailure());
-  
-}
-
-function loginSuccess(){
-
-  alert('success');
-  
-}
-
-function loginFailure(){
-
-  alert('failure');
+    facebookConnectPlugin.login(["public_profile"],
+        fbLoginSuccess,
+        function (error) { alert("" + error) }
+    );
   
 }
