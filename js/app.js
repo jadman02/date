@@ -49,7 +49,7 @@ myApp.init();
 function facebookLogin(){
 
     CordovaFacebook.login({
-   permissions: ['email', 'user_likes'],
+   permissions: ['email'],
    onSuccess: function(result) {
       if(result.declined.length > 0) {
          alert("The User declined something!");
