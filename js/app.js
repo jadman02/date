@@ -36,34 +36,6 @@ myApp.init();
     
     $( document ).ready(function() {
 
-        // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAgU_QQb-dKUM_iPnHSkA_VycnGIMsnKas",
-    authDomain: "single-duck.firebaseapp.com",
-    databaseURL: "https://single-duck.firebaseio.com",
-    storageBucket: "single-duck.appspot.com",
-    messagingSenderId: "124927619672"
-  };
-
-  var defaultApp = firebase.initializeApp(config);
-  var firebaseRef = firebase.database().ref();
-
-// Get a reference to the storage service, which is used to create references in your storage bucket
-var storage = firebase.storage();
-
-// Create a storage reference from our storage service
-var storageRef = storage.ref();
-
-
-
-var database = firebase.database();
-alert(defaultApp.name);  // "[DEFAULT]"
-        
-firebase.database().ref('/users').once('value').then(function(snapshot) {
-  
-                        alert(snapshot.val());
-                        
-});
         
 });        
     
