@@ -30,7 +30,7 @@ function onDeviceReady() {
 alert('device ready');  
 }
 
-facebookConnectPlugin.browserInit(784956164912201);
+//facebookConnectPlugin.browserInit(784956164912201);
 
 function facebookLogin(){
 alert('facebook');
