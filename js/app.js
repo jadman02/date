@@ -31,6 +31,7 @@ var myApp = new Framework7({init: false});
 var $$ = Dom7;
 // Add views
 var view1 = myApp.addView('#view-1');
+    var view2 = myApp.addView('#view-2');
 myApp.init();
     
 }
