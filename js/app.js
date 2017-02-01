@@ -20,11 +20,12 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
       initappDateDuck();
+        alert('reacieved event');
     }
 };
 
 function initappDateDuck(){
-
+$( document ).ready(function() {
 // Initialize your app
 var myApp = new Framework7({init: false});
 // Export selectors engine
@@ -34,8 +35,8 @@ var view1 = myApp.addView('#view-1');
     var view2 = myApp.addView('#view-2');
 myApp.init();
     
-    $( document ).ready(function() {
-
+    
+alert('yo');
         
 });        
     
