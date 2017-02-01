@@ -59,13 +59,12 @@
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 
       using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android
       gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" -->
-    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.3">
-        <params>
-            <param name="APP_ID" value="784956164912201" />
-        <param name="APP_NAME" value="Single Duck" />
-    </params>
-                </gap:plugin>
 
+        <gap:plugin name="com.phonegap.plugins.facebookconnect" version="8.0">
+        <param name="APP_ID" value="784956164912201" />
+        <param name="APP_NAME" value="Single Duck" />
+    </gap:plugin>
+        
     <!--
       See: https://github.com/apache/cordova-plugin-whitelist
       So you can load an iframe with the game platform.
