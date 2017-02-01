@@ -40,20 +40,29 @@ myApp.init();
 
 
 
-var fbLoginSuccess = function (userData) 
-{
-    alert("UserInfo: " + JSON.stringify(userData));
-}
- 
+
 
 
 
 
 
 function facebookLogin(){
-    facebookConnectPlugin.login(["public_profile"],
-        fbLoginSuccess,
-        function (error) { alert("error" + error); }
-    );
+
+    CordovaFacebook.login({
+   permissions: ['email', 'user_likes'],
+   onSuccess: function(result) {
+      if(result.declined.length > 0) {
+         alert("The User declined something!");
+      }
+      /* ... */
+   },
+   onFailure: function(result) {
+      if(result.cancelled) {
+         alert("The user doesn't like my app");
+      } else if(result.error) {
+         alert("There was an error:" + result.errorLocalized);
+      }
+   }
+});
   
 }
