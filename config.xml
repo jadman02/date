@@ -11,11 +11,12 @@
 <content src="index.html" />
 	<access origin="*" subdomains="true" />
 	<preference name="phonegap-version" value="cli-6.3.0" />
-
-	<gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0">
+<gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.3">
         <param name="APP_ID" value="784956164912201" />
         <param name="APP_NAME" value="Single Duck" />
     </gap:plugin>
+	
+
 
 <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
