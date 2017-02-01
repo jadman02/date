@@ -9,5 +9,5 @@
 	   Date or Duck Team
 	</author>
 <access origin="*" subdomains="true" />
-	<preference name="phonegap-version" value="cli-6.3.0" />
+	<preference name="phonegap-version" value="cli-6.0.0" />
 </widget>
