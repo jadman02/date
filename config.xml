@@ -12,10 +12,10 @@
 	<access origin="*" subdomains="true" />
 	<preference name="phonegap-version" value="cli-6.3.0" />
 
-	<gap:plugin name="cordova-plugin-facebook" source="npm">
-<param name="FACEBOOK_APP_ID" value="784956164912201" />
-        <param name="FACEBOOK_DISPLAY_NAME" value="Single Duck" />
-</gap:plugin>
+	<gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.3">
+		<param name="APP_ID" value="784956164912201" />
+        <param name="APP_NAME" value="Single Duck" />
+    </gap:plugin>
 	
 
 
