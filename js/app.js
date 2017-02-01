@@ -24,6 +24,8 @@ var app = {
     }
 };
 
+app.initialize();
+
 function initappDateDuck(){
 $( document ).ready(function() {
 // Initialize your app
