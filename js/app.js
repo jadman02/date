@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, true);
 
-?/*
+/*
 $(document).ready(function () {
 
   alert('yo');
