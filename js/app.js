@@ -54,7 +54,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 function loginFacebook(){
 
 var provider = new firebase.auth.FacebookAuthProvider();
-firebase.auth().signInWithPopup(provider).then(function(result) {
+firebase.auth().signInWithRedirect(provider).then(function(result) {
  // This gives you a Facebook Access Token. You can use it to access theFacebook API.
    alert(result);
    var token = result.credential.accessToken;
