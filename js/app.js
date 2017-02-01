@@ -29,6 +29,7 @@ var $$ = Dom7;
 // Add views
 var view1 = myApp.addView('#view-1');
 myApp.init();
+          alert('done');
 });
       
     }
