@@ -41,13 +41,14 @@
 <script>
 
      // Defaults to sessionStorage for storing the Facebook token
-     openFB.init({appId: ''});
+     openFB.init({appId: '784956164912201'});
 
     //  Uncomment the line below to store the Facebook token in localStorage instead of sessionStorage
     //  openFB.init({appId: 'YOUR_FB_APP_ID', tokenStore: window.localStorage});
 
     function login() {
         alert('yo');
+        var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
         openFB.login(
                 function(response) {
                     if(response.status === 'connected') {
