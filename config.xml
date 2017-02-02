@@ -1,37 +1,37 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.dateorduck" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
-	<name>Date or Duck</name>
-	<description>
-		Create dates with people around you.
-	</description>
+<?xml version="1.0" encoding="UTF-8" ?>
+  <widget xmlns = "http://www.w3.org/ns/widgets"
+  xmlns:android   = "http://schemas.android.com/apk/res/android"
+  xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id          = "com.bsdmasterindex.phonegapaccelerometer-test"
+  version     = "1.3.0"
+  versionCode = "100" > <!-- versionCode is optional and Android only -->
+  <!-- Tool Set Version -->        
+  <preference name='phonegap-version' value='cli-5.2.0' />
 
-	<author email="info@dateorduck.com" href="http://dateorduck.com">
-	   Date or Duck Team
-	</author>
+  <name>Phonegap Accelerometer test</name>
+  <description>Simple Accelerometer test.</description>
+  <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
+  Jesse Monroy
+  </author>
 
-	  <plugin name="cordova-plugin-battery-status"      source="npm" spec="~1.1.1" />
-    <plugin name="cordova-plugin-camera"              source="npm" spec="~2.1.1" />
-    <plugin name="cordova-plugin-media-capture"       source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-console"             source="npm" spec="~1.0.2" />
-    <plugin name="cordova-plugin-contacts"            source="npm" spec="~2.0.1" />
-    <plugin name="cordova-plugin-device"              source="npm" spec="~1.1.1" />
-    <plugin name="cordova-plugin-device-motion"       source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-device-orientation"  source="npm" spec="~1.0.2" />
-    <plugin name="cordova-plugin-dialogs"             source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-file"                source="npm" spec="~4.1.1" />
-    <plugin name="cordova-plugin-file-transfer"       source="npm" spec="~1.5.0" />
-    <plugin name="cordova-plugin-geolocation"         source="npm" spec="~2.1.0" />
-    <plugin name="cordova-plugin-globalization"       source="npm" spec="~1.0.3" />
-    <plugin name="cordova-plugin-media"               source="npm" spec="~2.2.0" />
-    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-splashscreen"        source="npm" spec="~3.2.1" />
-    <plugin name="cordova-plugin-statusbar"           source="npm" spec="~2.1.2" />
-    <plugin name="cordova-plugin-vibration"           source="npm" spec="~2.1.0" />
-    <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
-	
-<allow-navigation href="*" />
-    <allow-intent href="*" />
-	<access origin="*" subdomains="true" />
+  <!-- Target Platforms -->
+  <!-- Remove to test which platforms build by default. -->
+  <platform name="android" />
+  <platform name="ios" />
+  <platform name="winphone" />
 
-</widget>
+  <!-- App requested permission -->
+  <preference name="permissions" value="none"/>
+
+  <!-- PLUGINS * PLUGINS * PLUGINS -->
+  <!-- spec="" follows the syntax of https://docs.npmjs.com/cli/install -->
+  <plugin name="cordova-plugin-device"        source="npm" spec="1.0.1" />
+  <plugin name="cordova-plugin-device-motion" source="npm" spec="1.1.1" />
+
+  <!-- WHITELIST * WHITELIST * WHITELIST -->
+  <!-- https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md -->
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
+  <access origin="*" /> <!-- Required for iOS9 -->
+
+  </widget>
