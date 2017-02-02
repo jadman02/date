@@ -13,6 +13,11 @@
     
     <script>
     
+        document.addEventListener('deviceready', function(){
+            alert('ready');
+cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
+});
+        
         function openBrowser(){
 cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
         }
