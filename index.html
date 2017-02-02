@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Boilerplate #8</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval';" /> -->
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="app.css" />
+    <style></style>
+    <script type="text/javascript">
+    // This is to have the 'deviceready' code from firing in a webbrowser.
+    var device = {platform:'browser'};
+    function onLoad() {
+        //alert("body loaded.");
+        app.onDeviceReady();
+    }
+    </script>
+</head>
+<body onload="onLoad()">
+<div id=header class="button button-block button-large">
+    <img align=left src=images/favicon-48x48.png>
+    Boilerplate #8
+    <button id=exitApp class="button button-pill button-primary button-large">Exit</button>
+</div>
 
-    http://www.apache.org/licenses/LICENSE-2.0
+<div id=alabel class=marginSpacer>plugin available: <span id=isavailable>content</span></div>
+<div>Plugin Name</div>
+<div id=resultPlugin class=marginSpacer>results</div>
+<div >
+    <button id=openPlugin class="button button-pill button-action marginSpacer">create/open</button>
+    <button id=closePlugin class="button button-pill button-caution marginSpacer">delete/close</button>
+</div>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <meta http-equiv="Content-Security-Policy" 
-             content="default-src *; 
-                      style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
-                      script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <div class="event received">
-                  <p>Device is Ready</p>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+<div class="copyright" >
+    <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2016</span>
+</div>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/fastclick.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/zepto-1.1.6.js"></script>
+<script type="text/javascript" charset="utf-8" src="buttons.js"></script>
+<script type="text/javascript" charset="utf-8" src="app.js"></script>
+<script type="text/javascript"></script>
+</body>
 </html>
